@@ -1,16 +1,30 @@
-
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color:burlywood;
+}
+header{
+  width: 100%;
+  z-index: 1;
+}
 img{
   max-width: 100%;
 }
-.main-image{
-  height: 280px;
+.main-image-div{
+  height: 21rem;
   background-color: blueviolet;
+  width: 100%;
 }
-.inner-main-image{
-  height: 330px;
-  background-color: blue;
-
+.caption-section{
+  width: 85%;
+  padding-top: 16.5rem;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
 }
-.section1{
-  padding-bottom: 6rem;
+.main-img{
+  width: inherit;
+  height: inherit;
 }
