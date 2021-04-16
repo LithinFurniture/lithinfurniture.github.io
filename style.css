@@ -2,3 +2,15 @@
 img{
   max-width: 100%;
 }
+.main-image{
+  height: 230px;
+  background-color: blueviolet;
+}
+.inner-main-image{
+  height: 280px;
+  background-color: blue;
+
+}
+.pad-b{
+  padding-bottom: 7rem;
+}
