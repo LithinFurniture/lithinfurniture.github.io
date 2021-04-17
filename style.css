@@ -34,14 +34,32 @@ img{
 p{
   /* font-size: 3.3vw; */
 }
-.about-section{
-}
 .section-headings{
   text-align: center;
 }
-.about-p{
- 
-}
 iframe{
   max-width: 100%;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover 
+{
+   color:#a1a1a1; 
+   text-decoration:none; 
+   cursor:pointer;  
+}
+.copyrights{
+  color: #a1a1a1;
+  font-size: small;
+}
+.footer-section{
+  background-color: black;
+}
+.media-logo{
+  font-size: larger;
+}
+.about-inner-div{
+  width: 85%;
 }
