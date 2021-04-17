@@ -17,14 +17,31 @@ img{
   width: 100%;
 }
 .caption-section{
-  width: 85%;
-  padding-top: 16.5rem;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
+  width: 70%;
+  top: -4.5rem;
+  position: relative;
 }
 .main-img{
   width: inherit;
   height: inherit;
+}
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .7);
+}
+.navbar{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .2);
+}
+p{
+  /* font-size: 3.3vw; */
+}
+.about-section{
+}
+.section-headings{
+  text-align: center;
+}
+.about-p{
+ 
+}
+iframe{
+  max-width: 100%;
 }
