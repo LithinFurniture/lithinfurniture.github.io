@@ -12,8 +12,8 @@ header {
   max-width: 100%;
 }
 .main-image-div {
-  height: 21rem;
-  background-color: blueviolet;
+  height: 20rem;
+  background-color: rgb(207, 199, 89);
   width: 100%;
 }
 .caption-section {
@@ -62,4 +62,11 @@ a:hover {
 }
 .about-inner-div {
   width: 85%;
+}
+.main-title{
+  width: 70%;
+  height: 9rem;
+  top: -17.5rem;
+  position: relative;
+  left: 20rem;
 }
