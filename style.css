@@ -12,13 +12,13 @@ header {
   max-width: 100%;
 }
 .main-image-div {
-  height: 20rem;
-  background-color: rgb(207, 199, 89);
+  height: 17rem;
+  background-color: hsl(56, 49%, 55%);
   width: 100%;
 }
 .caption-section {
   width: 70%;
-  top: -4.5rem;
+  top: -2.9rem;
   position: relative;
 }
 .main-img {
