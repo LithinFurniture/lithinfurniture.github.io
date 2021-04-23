@@ -11,30 +11,31 @@
 <body>
 
 
-    <header class="position-fixed">
-        <nav class="navbar navbar-expand-md navbar-light bg-secondary">
-            
-            <button class="navbar-toggler nav-button" style="font-size: small;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <h4 class="nav-heading">.....</h4>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active pr-5" href="#section-home">Home</a>
-                    <a class="nav-item nav-link active pr-5" href="index-gallery.html">Gallery</a>
-                    <a class="nav-item nav-link active pr-5" href="#section-about">About Us <span class="sr-only">Features</span></a>
-                    <a class="nav-item nav-link active pr-5" href="#section-location">Location</a>
+    <header>
+        <div class="navbar-section position-fixed">
+            <nav id="navbar" class="navbar navbar-expand-md navbar-dar shadow bg-secondary">
+                <button class="navbar-toggler nav-button" style="font-size: medium; type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h4 class="nav-heading">.....</h4>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active pr-5 section-links" href="#section-home">Home</a>
+                        <a class="nav-item nav-link active pr-5 section-links" href="index-gallery.html">Gallery</a>
+                        <a class="nav-item nav-link active pr-5 section-links" href="#section-about">About Us <span class="sr-only">Features</span></a>
+                        <a class="nav-item nav-link active pr-5 section-links" href="#section-location">Location</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+        <div class="main-image-div pt-5" id="section-home">
+            <img class="main-img img-fluid shadow" src="books-lamp-on-rustic-cupboard-260nw-7862803872.png" alt="">
+        </div>
     </header>
 
 
-    <section class="main-image-section position-fixe pt-4" id="section-home">
-        <div class="main-image-div">
-            <img class="main-img img-fluid shadow" src="books-lamp-on-rustic-cupboard-260nw-7862803872.png" alt="">
-        </div>
-    </section>
+    
 
 
     <section class="caption-section mx-auto">
@@ -102,9 +103,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center media-logo">
-                    <a href="https://www.facebook.com/Lithin.Furniture"><i class="fab fa-facebook-square pr-1"></i></a>
-                    <a href="http://www.instagram.com/lithin_furniture"><i class="fab fa-instagram-square pr-1"></i></a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=lithinfurniture@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                    <a class="media-log-a" href="https://www.facebook.com/Lithin.Furniture"><i class="fab fa-facebook-square pr-1"></i></a>
+                    <a class="media-log-a" href="http://www.instagram.com/lithin_furniture"><i class="fab fa-instagram-square pr-1"></i></a>
+                    <a class="media-log-a" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=lithinfurniture@gmail.com"><i class="fas fa-envelope-square"></i></a>
                 </div>
                 <div class="col-12 text-center p-1">
                     <p class="copyrights"><i class="far fa-copyright"></i> Copyrights</p>
@@ -114,11 +115,24 @@
     </footer>
 
 
-
-
+    
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-250px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
     <script src="https://kit.fontawesome.com/9ff8229061.js" crossorigin="anonymous"></script>
 </body>
 </html>
