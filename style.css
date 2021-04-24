@@ -2,7 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: burlywood;
+  /* background-color: burlywood; */
+  background-image: linear-gradient( #ffffff,#505155);
 }
 .c-img {
   max-width: 100%;
@@ -13,10 +14,11 @@ body {
 .main-image-div {
   height: 17rem;
   width: 100%;
+  /* margin-top: -2.5rem; */
 }
 .caption-section {
   width: 70%;
-  top: -2.8rem;
+  top: -5.4rem;
   position: relative;
 }
 .main-img {
@@ -26,11 +28,15 @@ body {
 .shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
 }
-.navbar-div {
+.shadow-lite {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-  transition: top 0.5s;
+}
+.navbar-div {
+  /* transition: top 0.5s; */
   z-index: 10;
   width: 100%;
+  top: -17em;
+  position: relative;
 }
 .navbar {
   padding: 0.01rem;
@@ -74,9 +80,6 @@ iframe {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   max-width: 80%;
-}
-.caption-inner-div {
-  
 }
 @media only screen and (max-width:767px) {
   
