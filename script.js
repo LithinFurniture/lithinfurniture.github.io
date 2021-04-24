@@ -10,3 +10,11 @@
 //     }
 //     prevScrollpos = currentScrollPos;
 // }
+
+function toggleMenu() {
+    if(document.getElementById("caption-section").style.top == "3rem") {
+        document.getElementById("caption-section").style.top ="-3.0rem"
+    } else {
+        document.getElementById("caption-section").style.top= "3rem"
+    }
+}

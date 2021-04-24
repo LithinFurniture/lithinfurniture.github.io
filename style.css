@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-body {
+.intex-body {
   /* background-color: burlywood; */
   background-image: linear-gradient( #ffffff,#505155);
 }
@@ -12,14 +12,15 @@ body {
   font-size: 3vw;
 }
 .main-image-div {
-  height: 17rem;
+  height: 18rem;
   width: 100%;
   /* margin-top: -2.5rem; */
 }
 .caption-section {
   width: 70%;
-  top: -5.4rem;
+  top: -3rem;
   position: relative;
+  transition: 400ms;
 }
 .main-img {
   width: inherit;
@@ -32,11 +33,10 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .navbar-div {
-  /* transition: top 0.5s; */
   z-index: 10;
   width: 100%;
-  top: -17em;
-  position: relative;
+  top: 0;
+  position: absolute;
 }
 .navbar {
   padding: 0.01rem;
@@ -93,5 +93,5 @@ iframe {
   color: #000000;
 }
 .section-links:hover {
-  color: rgb(148, 207, 207);
+  color: rgb(68, 139, 139);
 }
