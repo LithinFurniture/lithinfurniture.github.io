@@ -12,9 +12,9 @@
 
 
     <header>
-        <div class="navbar-section position-fixed">
-            <nav id="navbar" class="navbar navbar-expand-md navbar-dar shadow bg-secondary">
-                <button class="navbar-toggler nav-button" style="font-size: medium; type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <div id="navbar-div" class="navbar-div position-fixed">
+            <nav class="navbar navbar-expand-md navbar-dar bg-info pl-2">
+                <button class="navbar-toggler nav-button" style="font-size: medium;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <!-- <span class="navbar-toggler-icon"></span> -->
                     <i class="fas fa-bars"></i>
                 </button>
@@ -29,7 +29,7 @@
                 </div>
             </nav>
         </div>
-        <div class="main-image-div pt-5" id="section-home">
+        <div class="main-image-div" id="section-home">
             <img class="main-img img-fluid shadow" src="books-lamp-on-rustic-cupboard-260nw-7862803872.png" alt="">
         </div>
     </header>
@@ -38,9 +38,9 @@
     
 
 
-    <section class="caption-section mx-auto">
+    <section class="caption-section mx-auto pb-3">
         <div class="caption-div">
-            <div class="row bg-secondary rounded caption-inner-div shadow"> 
+            <div class="row bg-danger rounded caption-inner-div shadow"> 
                 <div class="col-6 p-0">
                     <img class="rounded-left c-img" src="img3.png" alt="">
                 </div>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="pt-5 caption-div">
-            <div class="row bg-secondary rounded caption-inner-div shadow">
+            <div class="row bg-danger rounded caption-inner-div shadow">
                 <div class="col-6 my-auto text-center">
                     <p class="c-text">Things Of Quatity Have No Fear Of Time</p>
                 </div>
@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="pt-5 caption-div">
-            <div class="row bg-secondary rounded caption-inner-div shadow">
+            <div class="row bg-danger rounded caption-inner-div shadow">
                 <div class="col-6 p-0">
                     <img class="rounded-left c-img" src="img1.png" alt="">
                 </div>
@@ -120,19 +120,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar -->
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-250px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/9ff8229061.js" crossorigin="anonymous"></script>
 </body>
 </html>
