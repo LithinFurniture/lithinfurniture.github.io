@@ -1,20 +1,27 @@
-// When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar
+// When user scrolls down, caption-section moves to default position.
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("caption-section").style.top = "3rem";
+    } else {
+        document.getElementById("caption-section").style.top = "-3.5rem";
+    }
+    // prevScrollpos = currentScrollPos;
+}
 
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//     var currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
-//         document.getElementById("navbar-div").style.top = "0";
-//     } else {
-//         document.getElementById("navbar-div").style.top = "-250px";
-//     }
-//     prevScrollpos = currentScrollPos;
-// }
 
-function toggleMenu() {
+//When user clicked header image, caption-section toggles up and down.
+function toggleCaptionMoves() {
     if(document.getElementById("caption-section").style.top == "3rem") {
-        document.getElementById("caption-section").style.top ="-3.0rem"
+        document.getElementById("caption-section").style.top ="-3.5rem"
     } else {
         document.getElementById("caption-section").style.top= "3rem"
     }
+}
+//When user clicked caption-section, caption-section toggles to default position.
+function toggleCaptionBack() {
+    if(document.getElementById("caption-section").style.top == "3rem") {
+        document.getElementById("caption-section").style.top ="-3.5rem"
+    } 
 }
