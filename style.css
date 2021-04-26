@@ -69,13 +69,6 @@ iframe {
 .about-inner-div {
   width: 85%;
 }
-/* .main-title {
-  width: 70%;
-  height: 9rem;
-  top: -17.5rem;
-  position: relative;
-  left: 20rem;
-} */
 .address {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -87,14 +80,17 @@ iframe {
 .section-links:hover {
   color: rgb(68, 139, 139);
 }
-.nav-head {
-  font-size: 5.5vw;
+.title-div {
+  width: 35rem;
   position: relative;
   top: -15rem;
-  left: 1rem;
+  margin-left: 2rem;
+}
+.title {
+  font-size: 5.5vw;
   color: darkslategray;
 }
-.nav-heading {
+.nav-title {
   color: darkslategray;
   padding-left: 1rem;
   padding-top: 0.5rem;
@@ -111,10 +107,10 @@ iframe {
 
 @media only screen and (max-width:767px) {
   
-  .nav-heading {
+  .nav-title {
     margin-right: auto;   
   }
-  .nav-head {
+  .title-div {
     display: none;
   }
 
@@ -123,7 +119,7 @@ iframe {
 
 @media only screen and (min-width:767px) {
   
-  .nav-heading {
+  .nav-title {
     display: none;
     
   }
