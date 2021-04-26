@@ -87,9 +87,23 @@ iframe {
 .section-links:hover {
   color: rgb(68, 139, 139);
 }
-.location-section {
-  
+.nav-head {
+  font-size: 5.5vw;
+  position: relative;
+  top: -15rem;
+  left: 1rem;
+  color: darkslategray;
 }
+.nav-heading {
+  color: darkslategray;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+
+
+
+
 
 
 
@@ -98,8 +112,20 @@ iframe {
 @media only screen and (max-width:767px) {
   
   .nav-heading {
-    margin-right: auto;
-    padding-left: 1rem;
+    margin-right: auto;   
+  }
+  .nav-head {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (min-width:767px) {
+  
+  .nav-heading {
+    display: none;
+    
   }
 
 }

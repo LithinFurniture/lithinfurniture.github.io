@@ -1,13 +1,13 @@
 // When user scrolls down, caption-section moves to default position.
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.pageXOffset;
 window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
+    var currentScrollPos = window.pageXOffset;
     if (prevScrollpos > currentScrollPos) {
-        document.getElementById("caption-section").style.top = "3rem";
+        document.getElementById("caption-section").style.top = "-3.5rem";
     } else {
         document.getElementById("caption-section").style.top = "-3.5rem";
     }
-    // prevScrollpos = currentScrollPos;
+    prevScrollpos = currentScrollPos;
 }
 
 
