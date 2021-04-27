@@ -2,8 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 .intex-body {
-  /* background-color: burlywood; */
-  background-image: linear-gradient( #ffffff,#505155);
+  background-image: linear-gradient(#deb887, #ffffff,#deb8878f);
 }
 .c-img {
   max-width: 100%;
@@ -17,10 +16,24 @@ html {
   /* margin-top: -2.5rem; */
 }
 .caption-section {
-  width: 70%;
+  width: 80%;
   top: -3.5rem;
   position: relative;
-  transition: 400ms;
+  transition: 600ms;
+  animation:fade-in 1.2s linear forwards;
+  /* animation:move-to-top 500ms linear forwards; */
+}
+.caption-div {
+  position: relative;
+}
+.caption-inner-div {
+  /* background-color: rgb(134, 130, 139); */
+  /* opacity: 0.5; */
+  /* background: rgba(134, 130, 139,0.7) */
+  /* background: rgb(222, 184, 135) */
+  /* background: hsl(200, 9%, 67%); */
+  /* background: #96979b; */
+  background: #bb8d6da1;
 }
 .main-img {
   width: inherit;
@@ -73,6 +86,9 @@ iframe {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   max-width: 80%;
+  /* background: #ccaf9a; */
+  background: #deb88759;
+  /* background-image: url(furniture\ photos/1618583869221.png); */
 }
 .section-links {
   color: #000000;
@@ -83,11 +99,11 @@ iframe {
 .title-div {
   width: 35rem;
   position: relative;
-  top: -15rem;
+  top: -16rem;
   margin-left: 2rem;
 }
 .title {
-  font-size: 5.5vw;
+  font-size: 3.4vw;
   color: darkslategray;
 }
 .nav-title {
@@ -95,33 +111,62 @@ iframe {
   padding-left: 1rem;
   padding-top: 0.5rem;
 }
-
-
-
-
-
-
-
-
+.span-t {
+  font-size: 4.2vw;
+}
+.span-n {
+  font-size: 4.6vw;
+}
+.aa {
+  font-size: 3.7vw;
+}
+.c-l {
+  animation:move-to-left 400ms linear forwards;
+}
+.c-r {
+  animation:move-to-right 400ms linear forwards;
+}
 
 
 @media only screen and (max-width:767px) {
-  
   .nav-title {
     margin-right: auto;   
   }
   .title-div {
     display: none;
   }
-
 }
-
-
 @media only screen and (min-width:767px) {
-  
   .nav-title {
     display: none;
     
   }
+}
 
+/*Animate fade effect to caption-section at the begining*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/*Animate moving effect to caption-div (to right & left) at the beginig*/
+@keyframes move-to-right {
+  from{
+    right: 20rem;
+  }
+  to{
+    right: 0rem;
+  }
+}
+@keyframes move-to-left {
+  0%{
+    left:20rem;
+  }
+  100%{
+    left:0rem
+  }
 }
