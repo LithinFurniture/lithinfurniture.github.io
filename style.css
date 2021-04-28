@@ -2,13 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 .intex-body {
-  background-image: linear-gradient(#deb887, #ffffff,#deb8878f);
+  /* background-image: linear-gradient(#deb887, #ffffff,#deb8878f); */
+  background-image: linear-gradient(to bottom right, white, rgba(0, 0, 0, 0.247));
+
 }
 .c-img {
   max-width: 100%;
 }
 .c-text{
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .main-image-div {
   height: 18rem;
@@ -121,10 +123,10 @@ iframe {
   font-size: 3.7vw;
 }
 .c-l {
-  animation:move-to-left 400ms linear forwards;
+  animation:move-to-left 500ms linear forwards;
 }
 .c-r {
-  animation:move-to-right 400ms linear forwards;
+  animation:move-to-right 500ms linear forwards;
 }
 
 
