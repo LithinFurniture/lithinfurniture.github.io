@@ -2,14 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 .intex-body {
-  /* background-image: linear-gradient(#deb887, #ffffff,#deb8878f); */
   background-image: linear-gradient(to bottom right, white, rgba(0, 0, 0, 0.247));
-
 }
 .c-img {
   max-width: 100%;
+  max-height: 100%;
+}
+.ci-right {
+  border-left-style: ridge;
+  border-color: #5e473a;
+}
+.ci-left {
+  border-right-style: groove;
+  border-color: #5e473a;
 }
 .c-text{
+  font-family: 'Marck Script', cursive;
   font-size: 3.5vw;
 }
 .main-image-div {
@@ -19,23 +27,17 @@ html {
 }
 .caption-section {
   width: 80%;
-  top: -3.5rem;
+  /* top: -3.5rem; */
+  top: -2.5rem;
   position: relative;
   transition: 600ms;
   animation:fade-in 1.2s linear forwards;
-  /* animation:move-to-top 500ms linear forwards; */
 }
 .caption-div {
   position: relative;
 }
 .caption-inner-div {
-  /* background-color: rgb(134, 130, 139); */
-  /* opacity: 0.5; */
-  /* background: rgba(134, 130, 139,0.7) */
-  /* background: rgb(222, 184, 135) */
-  /* background: hsl(200, 9%, 67%); */
-  /* background: #96979b; */
-  background: #bb8d6da1;
+  background: #aa9d95;
 }
 .main-img {
   width: inherit;
@@ -56,10 +58,11 @@ html {
 .navbar {
   padding: 0.01rem;
 }
-.section-headings {
+.section-heading {
   text-align: center;
+  font-family: 'Righteous', cursive;
 }
-iframe {
+.map {
   max-width: 100%;
 }
 .copyrights {
@@ -84,16 +87,24 @@ iframe {
 .about-inner-div {
   width: 85%;
 }
-.address {
+.about-text {
+  font-family: 'El Messiri', sans-serif;
+  font-size: larger;
+}
+.address-div {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   max-width: 80%;
-  /* background: #ccaf9a; */
-  background: #deb88759;
-  /* background-image: url(furniture\ photos/1618583869221.png); */
+  background: #85685634;
+}
+.address-text {
+  font-family: 'Teko', sans-serif;
+  font-size:1.6rem;
+  letter-spacing: 0.06rem;
 }
 .section-links {
   color: #000000;
+  font-family: 'Exo', sans-serif;
 }
 .section-links:hover {
   color: rgb(68, 139, 139);
@@ -130,6 +141,12 @@ iframe {
 }
 
 
+
+
+
+
+
+
 @media only screen and (max-width:767px) {
   .nav-title {
     margin-right: auto;   
@@ -144,6 +161,8 @@ iframe {
     
   }
 }
+
+
 
 /*Animate fade effect to caption-section at the begining*/
 @keyframes fade-in {
@@ -172,3 +191,14 @@ iframe {
     left:0rem
   }
 }
+
+
+
+/* @keyframes stretch {
+  0% {
+    transform: scale(.01);
+    }
+
+  100% {
+  }
+} */

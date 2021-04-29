@@ -5,7 +5,7 @@ window.onscroll = function() {
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("caption-section").style.top = "3.5rem";
     } else {
-        document.getElementById("caption-section").style.top = "-3.5rem";
+        document.getElementById("caption-section").style.top = "-2.5rem";
     }
     prevScrollpos = currentScrollPos;
 }
@@ -14,7 +14,7 @@ window.onscroll = function() {
 //When user clicked header image, caption-section toggles up and down.
 function toggleCaptionMoves() {
     if(document.getElementById("caption-section").style.top == "3rem") {
-        document.getElementById("caption-section").style.top ="-3.5rem"
+        document.getElementById("caption-section").style.top ="-2.5rem"
     } else {
         document.getElementById("caption-section").style.top= "3rem"
     }
@@ -22,6 +22,6 @@ function toggleCaptionMoves() {
 //When user clicked caption-section, caption-section toggles to default position.
 function toggleCaptionBack() {
     if(document.getElementById("caption-section").style.top == "3rem") {
-        document.getElementById("caption-section").style.top ="-3.5rem"
+        document.getElementById("caption-section").style.top ="-2.5rem"
     } 
 }
