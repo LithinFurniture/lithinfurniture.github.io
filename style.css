@@ -1,14 +1,119 @@
 html {
   scroll-behavior: smooth;
 }
-p{
+p {
   margin-bottom: 0;
 }
-button.nav-button {
-  outline: none;
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
 }
+.shadow-lite {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.section-headings {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  color: rgb(26, 14, 0);
+}
+
 .intex-body {
   background-image: linear-gradient(to bottom right, white, rgba(0, 0, 0, 0.247));
+}
+
+
+/* --------------- */
+/* Section: header */
+/* --------------- */
+.main-image-div {
+  height: 18rem;
+  width: 100%;
+}
+.main-img {
+  width: inherit;
+  height: inherit;
+}
+.navbar-div {
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  position: absolute;
+}
+.navbar {
+  padding: 0.01rem;
+}
+.navbar button {
+  outline: none;
+  font-size: medium;
+}
+.title-div {
+  width: 35rem;
+  position: relative;
+  top: -16rem;
+  margin-left: 2rem;
+}
+.title {
+  font-size: 3.4vw;
+  font-family:  'Milonga', cursive;
+}
+.title .high-letter {
+  font-size: 4.2vw;
+  color: rgb(90, 48, 0);
+  text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.295);
+}
+.title .low-letter {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 0px 5px rgba(112, 61, 27, 0.712);
+}
+.nav-title {
+  font-family:  'Milonga', cursive;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 0.5px 0px 1px rgba(121, 73, 41, 0.671);
+}
+.nav-title .high-letter {
+  font-size: 4.6vw;
+  color: rgb(78, 42, 0);
+}
+.nav-title .low-letter {
+  font-size: 3.7vw;
+}
+.section-links {
+  color: rgb(17, 9, 0);
+  font-family: 'Exo', sans-serif;
+}
+.section-links:hover {
+  color: rgb(102, 69, 29);
+}
+
+
+/* ---------------- */
+/* Section: caption */
+/* ---------------- */
+.caption-section {
+  width: 80%;
+  top: -2.5rem;
+  position: relative;
+  transition: 600ms;
+  animation:fade-in 550ms linear forwards;
+}
+.caption-section .container {
+  position: relative;
+}
+.caption-section .container.small {
+  width: 93%; 
+  animation:move-to-right 500ms linear forwards;
+}
+.caption-section .container.large {
+  animation:move-to-left 500ms linear forwards;
+}
+.caption-section .row {
+  background: #aa9d95;
+}
+.caption-text {
+  font-family: 'Marck Script', cursive;
+  font-size: 3.5vw;
 }
 .caption-img {
   max-width: 100%;
@@ -22,90 +127,30 @@ button.nav-button {
   border-right-style: groove;
   border-color: #5e473a;
 }
-.caption-text{
-  font-family: 'Marck Script', cursive;
-  font-size: 3.5vw;
-}
-.main-image-div {
-  height: 18rem;
-  width: 100%;
-  /* margin-top: -2.5rem; */
-}
-.caption-section {
-  width: 80%;
-  /* top: -3.5rem; */
-  top: -2.5rem;
-  position: relative;
-  transition: 600ms;
-  animation:fade-in 550ms linear forwards;
-}
-.caption-div {
-  position: relative;
-}
-.caption-div.small {
-  width: 93%; 
-  animation:move-to-right 500ms linear forwards;
-}
-.caption-div.large {
-  animation:move-to-left 500ms linear forwards;
-}
-.caption-inner-div {
-  background: #aa9d95;
-}
-.main-img {
-  width: inherit;
-  height: inherit;
-}
-.shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
-}
-.shadow-lite {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-.navbar-div {
-  z-index: 10;
-  width: 100%;
-  top: 0;
-  position: absolute;
-}
-.navbar {
-  padding: 0.01rem;
-}
-.section-heading {
-  text-align: center;
-  font-family: 'Righteous', cursive;
-  color: rgb(26, 14, 0);
-}
-.map {
-  max-width: 100%;
-}
-.copyrights {
-  color: #a1a1a1;
-  font-size: small;
-}
-.footer-section {
-  background-color: black;
-}
-.media-logo {
-  font-size: larger;
-}
-.media-log-a {
-  color: #ffffff;
-  text-decoration: none; 
-}
-.media-log-a:hover {
-  color: #a1a1a1;
-  text-decoration: none;
-  cursor: pointer;
-}
-.about-inner-div {
+
+
+/* -------------- */
+/* Section: about */
+/* -------------- */
+.about-section .row {
   width: 85%;
-}
-.about-text {
+  }
+.about-section p {
   font-family: 'El Messiri', sans-serif;
   font-size: larger;
 }
+
+
+/* ----------------- */
+/* Section: location */
+/* ----------------- */
+.map {
+  max-width: 100%;
+}
 .address-div {
+  padding: 0;
+}
+.address-inner-div {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   width: 93%;
@@ -116,49 +161,30 @@ button.nav-button {
   font-size:1.3rem;
   letter-spacing: 0.03rem;
 }
-.section-links {
-  color: rgb(17, 9, 0);
-  font-family: 'Exo', sans-serif;
-}
-.section-links:hover {
-  color: rgb(102, 69, 29);
-}
-.title-div {
-  width: 35rem;
-  position: relative;
-  top: -16rem;
-  margin-left: 2rem;
-}
-.title {
-  font-size: 3.4vw;
-  font-family:  'Milonga', cursive;
-}
-.nav-title {
-  font-family:  'Milonga', cursive;
-  padding-left: 1rem;
-  padding-top: 0.5rem;
-  color: rgb(0, 0, 0);
-  text-shadow: 0.5px 0px 1px rgba(121, 73, 41, 0.671);
-}
-.title .high-letter {
-  font-size: 4.2vw;
-  /* color: rgb(68, 39, 6); */
-  color: rgb(90, 48, 0);
-  text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.295);
-}
-.title .low-letter {
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 0px 5px rgba(112, 61, 27, 0.712);
-}
-.nav-title .high-letter {
-  font-size: 4.6vw;
-  /* color: rgb(68, 39, 6); */
-  color: rgb(78, 42, 0);
-}
-.nav-title .low-letter {
-  font-size: 3.7vw;
-}
 
+
+/* --------------- */
+/* Section: footer */
+/* --------------- */
+.footer-section {
+  background-color: black;
+}
+.media-logo {
+  font-size: larger;
+}
+.media-logo a {
+  color: #ffffff;
+  text-decoration: none; 
+}
+.media-logo a:hover {
+  color: #a1a1a1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.copyrights {
+  color: #a1a1a1;
+  font-size: small;
+}
 
 
 
@@ -190,25 +216,25 @@ button.nav-button {
   0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
 /*Animate moving effect to caption-div (to right & left) at the beginig*/
 @keyframes move-to-right {
-  from{
+  from {
     right: 20rem;
   }
-  to{
+  to {
     right: 0rem;
   }
 }
 @keyframes move-to-left {
-  0%{
+  0% {
     left:20rem;
   }
-  100%{
+  100% {
     left:0rem
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.....</title>
+    <title>Lithin Furniture</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="">
@@ -13,7 +13,6 @@
 </head>
 <body class="intex-body">
 
-    
     <header id="section-header">
         <div class="main-image-div" onclick="toggleCaptionMoves()">
             <img class="main-img shadow-lite" src="media/index/img-1.png" alt="">
@@ -22,8 +21,8 @@
             </div>    
         </div>
         <div id="navbar-div" class="navbar-div">
-            <nav class="navbar navbar-expand-md navbar-dar pl-1">
-                <button class="navbar-toggler nav-button" style="font-size: medium;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-md pl-1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <h4 class="nav-title"><span class="high-letter">L</span><span class="low-letter">ITHIN </span><span class="high-letter">F</span><span class="low-letter">URNITURE</span></h4>
@@ -39,11 +38,10 @@
         </div>          
     </header>
 
-
     <!-- Section: caption -->
-    <section class="caption-section mx-auto pb-3" id="caption-section" onclick="toggleCaptionBack()">
-        <div class="container caption-div small">
-            <div class="row caption-inner-div rounded shadow"> 
+    <section class="caption-section mx-auto pb-5" id="caption-section" onclick="toggleCaptionBack()">
+        <div class="container small">
+            <div class="row rounded shadow"> 
                 <div class="col-6 p-0">
                     <img class="caption-img left rounded-left" src="media/index/img-2.png" alt="">
                 </div>
@@ -52,23 +50,20 @@
                 </div>
             </div>
         </div>
-        <div class="container caption-div large pt-5">
-            <div class="row caption-inner-div rounded shadow">
+        <div class="container large pt-5">
+            <div class="row rounded shadow">
                 <div class="col-6 m-auto text-center">
                     <p class="caption-text">Bad Design Goes Everywhere, Good Design Goes To Heaven</p>               
-                    <div class="caption-line-r"></div> 
                 </div>
                 <div class="col-6 p-0">
-                    <img class="caption-img right rounded-right" src="media/index/img-4.png" alt="">
-                    <!-- <img class="caption-img right rounded-right" src="media/index/img-3.png" alt=""> -->
+                    <img class="caption-img right rounded-right" src="media/index/img-3.png" alt="">
                 </div>
             </div>
         </div>
         <div class="container caption-div small pt-5">
-            <div class="row caption-inner-div rounded shadow">
+            <div class="row rounded shadow">
                 <div class="col-6 p-0">
-                    <img class="caption-img left rounded-left" src="media/index/img-3.png" alt="">                    
-                    <!-- <img class="caption-img left rounded-left" src="media/index/img-4.png" alt=""> -->
+                    <img class="caption-img left rounded-left" src="media/index/img-4.png" alt="">                    
                 </div>
                 <div class="col-6 m-auto text-center">
                     <p class="caption-text">Things Of Quatity Have No Fear Of Time</p>
@@ -79,12 +74,12 @@
     <!-- /Section: caption -->
 
     <!-- Section: about -->
-    <section class="about-section pt-4" id="section-about">
+    <section class="about-section pt-3" id="section-about">
         <div class="container-fluid">
-            <div class="row about-inner-div mx-auto" onclick="toggleCaptionBack()">
+            <h2 class="section-headings">About Us</h2>
+            <div class="row mx-auto" onclick="toggleCaptionBack()">
                 <div class="col-12">
-                    <h2 class="section-heading pt-3">About Us</h2>
-                    <p class="about-text p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
             </div>
         </div>
@@ -92,15 +87,15 @@
     <!-- /Section: about -->
 
     <!-- Section: location -->
-    <section class="location-section" id="section-location">
+    <section class="location-section pt-5" id="section-location">
         <div class="container-fluid">
-            <div class="row pt-5">
-                <h2 class="section-heading col-12 pt-3">Location</h2>
+            <h2 class="section-headings">Location</h2>
+            <div class="row pt-3">
                 <div class="col-12 col-md-6 p-5">
                     <iframe class="map shadow-lite rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1317.0733859834106!2d76.15595075223588!3d11.118050403916278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b93c568e23fe!2sLithin%20Furniture!5e0!3m2!1sen!2sin!4v1619419041207!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div style="padding: 0;" class="col-12 col-md-6 m-auto">
-                    <div class="address-div ml-auto p-2 shadow text-center">
+                <div class="address-div col-12 col-md-6 m-auto">
+                    <div class="address-inner-div ml-auto p-4 shadow text-center">
                         <p class="address-text p-5"><strong>Lithin Furniture</strong><br>AJ Tower<br>Payyanad (P.O)<br>Cholakkal<br>9846457188</p>
                     </div>
                 </div>
@@ -109,25 +104,21 @@
     </section>
     <!-- /Section: location -->
 
-
     <footer class="footer-section shadow pt-4 mt-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="media-logo col-12 text-center">
-                    <a class="media-log-a" href="https://www.facebook.com/Lithin.Furniture"><i class="fab fa-facebook-square pl-1 pr-1"></i></a>
-                    <a class="media-log-a" href="http://www.instagram.com/lithin_furniture"><i class="fab fa-instagram-square pl-1 pr-1"></i></a>
-                    <a class="media-log-a" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=lithinfurniture@gmail.com"><i class="fas fa-envelope-square pl-1 pr-1"></i></a>
+                    <a href="https://www.facebook.com/Lithin.Furniture"><i class="fab fa-facebook-square pl-1 pr-1"></i></a>
+                    <a href="http://www.instagram.com/lithin_furniture"><i class="fab fa-instagram-square pl-1 pr-1"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=lithinfurniture@gmail.com"><i class="fas fa-envelope-square pl-1 pr-1"></i></a>
                 </div>
-                <div class="col-12 text-center p-1 pb-2">
+                <div class="col-12 text-center p-1 pb-3">
                     <p class="copyrights"><i class="far fa-copyright"></i> Copyrights</p>
                 </div>
             </div>
         </div>
     </footer>
 
-
-    
-    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
