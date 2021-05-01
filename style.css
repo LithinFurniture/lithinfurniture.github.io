@@ -1,6 +1,12 @@
 html {
   scroll-behavior: smooth;
 }
+p{
+  margin-bottom: 0;
+}
+button.nav-button {
+  outline: none;
+}
 .intex-body {
   background-image: linear-gradient(to bottom right, white, rgba(0, 0, 0, 0.247));
 }
@@ -31,7 +37,7 @@ html {
   top: -2.5rem;
   position: relative;
   transition: 600ms;
-  animation:fade-in 1.2s linear forwards;
+  animation:fade-in 550ms linear forwards;
 }
 .caption-div {
   position: relative;
@@ -68,6 +74,7 @@ html {
 .section-heading {
   text-align: center;
   font-family: 'Righteous', cursive;
+  color: rgb(26, 14, 0);
 }
 .map {
   max-width: 100%;
@@ -101,20 +108,20 @@ html {
 .address-div {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  max-width: 80%;
+  width: 93%;
   background: #85685634;
 }
 .address-text {
-  font-family: 'Teko', sans-serif;
-  font-size:1.6rem;
-  letter-spacing: 0.06rem;
+  font-family: 'Exo', sans-serif;
+  font-size:1.3rem;
+  letter-spacing: 0.03rem;
 }
 .section-links {
-  color: #000000;
+  color: rgb(17, 9, 0);
   font-family: 'Exo', sans-serif;
 }
 .section-links:hover {
-  color: rgb(68, 139, 139);
+  color: rgb(102, 69, 29);
 }
 .title-div {
   width: 35rem;
@@ -124,20 +131,31 @@ html {
 }
 .title {
   font-size: 3.4vw;
-  color: darkslategray;
+  font-family:  'Milonga', cursive;
 }
 .nav-title {
-  color: darkslategray;
+  font-family:  'Milonga', cursive;
   padding-left: 1rem;
   padding-top: 0.5rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 0.5px 0px 1px rgba(121, 73, 41, 0.671);
 }
-.span-t {
+.title .high-letter {
   font-size: 4.2vw;
+  /* color: rgb(68, 39, 6); */
+  color: rgb(90, 48, 0);
+  text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.295);
 }
-.span-n {
+.title .low-letter {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 0px 5px rgba(112, 61, 27, 0.712);
+}
+.nav-title .high-letter {
   font-size: 4.6vw;
+  /* color: rgb(68, 39, 6); */
+  color: rgb(78, 42, 0);
 }
-.aa {
+.nav-title .low-letter {
   font-size: 3.7vw;
 }
 
@@ -146,14 +164,16 @@ html {
 
 
 
-
-
+/* Media queries */
 @media only screen and (max-width:767px) {
   .nav-title {
     margin-right: auto;   
   }
   .title-div {
     display: none;
+  }
+  .address-div {
+    width: 80%;
   }
 }
 @media only screen and (min-width:767px) {
@@ -192,14 +212,3 @@ html {
     left:0rem
   }
 }
-
-
-
-/* @keyframes stretch {
-  0% {
-    transform: scale(.01);
-    }
-
-  100% {
-  }
-} */
