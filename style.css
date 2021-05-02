@@ -1,8 +1,3 @@
-:root {
-  --background-color: #fff;
-  --text-color: #000;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -23,9 +18,9 @@ p {
   color: rgb(26, 14, 0);
 }
 
-.intex-body {
+/* .intex-body {
   background-image: linear-gradient(to bottom right, white, rgb(219, 219, 219));
-}
+} */
 
 
 /* --------------- */
@@ -80,10 +75,11 @@ p {
 }
 .navbar-title .high-letter {
   font-size: 4.6vw;
-  color: rgb(78, 42, 0);
+  color: rgb(0, 0, 0);
 }
 .navbar-title .low-letter {
   font-size: 3.7vw;
+  color: rgb(37, 21, 1);
 }
 .section-links {
   color: rgb(17, 9, 0);
@@ -254,37 +250,6 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5)
   }
 }
-
-/* @media (prefers-color-scheme: dark) {
-  p {
-    color: black;
-  }
-  .title .high-letter {
-    color: rgb(90, 48, 0);
-    text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.295);
-  }
-  .title .low-letter {
-    color: black;
-    text-shadow: 2px 0px 5px rgba(112, 61, 27, 0.712);
-  }
-  .navbar-title {
-    font-family:  'Milonga', cursive;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    color: black;
-    text-shadow: 0.5px 0px 1px rgba(121, 73, 41, 0.671);
-  }
-  .navbar-title .high-letter {
-    font-size: 4.6vw;
-    color: rgb(78, 42, 0);
-  }
-  .section-headings {
-    color: rgb(26, 14, 0);
-  }
-  .navbar button {
-    color: black;
-  }
-} */
 
 
 
