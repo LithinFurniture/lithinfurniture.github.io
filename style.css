@@ -47,7 +47,7 @@ p {
   font-size: medium;
 }
 .title-div {
-  width: 35rem;
+  width: 45vw;
   position: relative;
   top: -16rem;
   margin-left: 2rem;
@@ -65,18 +65,18 @@ p {
   color: rgb(0, 0, 0);
   text-shadow: 2px 0px 5px rgba(112, 61, 27, 0.712);
 }
-.nav-title {
+.navbar-title {
   font-family:  'Milonga', cursive;
   padding-left: 1rem;
   padding-top: 0.5rem;
   color: rgb(0, 0, 0);
   text-shadow: 0.5px 0px 1px rgba(121, 73, 41, 0.671);
 }
-.nav-title .high-letter {
+.navbar-title .high-letter {
   font-size: 4.6vw;
   color: rgb(78, 42, 0);
 }
-.nav-title .low-letter {
+.navbar-title .low-letter {
   font-size: 3.7vw;
 }
 .section-links {
@@ -192,18 +192,18 @@ p {
 
 /* Media queries */
 @media only screen and (max-width:767px) {
-  .nav-title {
+  .navbar-title {
     margin-right: auto;   
   }
   .title-div {
     display: none;
   }
-  .address-div {
+  .address-inner-div {
     width: 80%;
   }
 }
 @media only screen and (min-width:767px) {
-  .nav-title {
+  .navbar-title {
     display: none;
     
   }
