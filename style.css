@@ -146,6 +146,7 @@ p {
 .about-section p {
   font-family: 'El Messiri', sans-serif;
   font-size: larger;
+  text-align: justify;
 }
 
 
@@ -213,6 +214,8 @@ p {
   .address-inner-div {
     width: 70%;
     padding: 1.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   .address-text {
     font-size: 0.8rem;
@@ -230,9 +233,6 @@ p {
   }
   .about-section .row {
     width: 100%;
-  }
-  .map-div {
-    padding-right: 5rem;
   }
   .map {
     height: 180px;
