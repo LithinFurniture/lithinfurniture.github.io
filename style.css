@@ -19,7 +19,7 @@ p {
 }
 
 .intex-body {
-  /* background-image: linear-gradient(to bottom right, white, rgb(179, 179, 179)); */
+  background-image: linear-gradient(to bottom right, white, rgb(219, 219, 219));
 }
 
 
@@ -244,7 +244,9 @@ p {
 @media only screen and (min-width:767px) {
   .navbar-title {
     display: none;
-    
+  }
+  .caption-section .row {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5)
   }
 }
 
