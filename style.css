@@ -102,6 +102,7 @@ p {
 }
 .caption-section .container {
   position: relative;
+  padding-bottom: 3rem;
 }
 .caption-section .container.small {
   /* width: 90%;  */
@@ -210,18 +211,23 @@ p {
     width: 80%;
   }
   .address-text {
-    font-size: 1rem;
-    padding: 2rem;
+    padding: 1rem;
   }
   .main-image-div {
     height: 12rem;
     width: 100%;
+  }
+  .caption-section .container {
+    padding-bottom: 1.3rem;
   }
   .about-section .row {
     width: 100%;
   }
   .map {
     height: 200px;
+  }
+  .section-links {
+    padding: 0.2rem;
   }
 }
 @media only screen and (min-width:767px) {

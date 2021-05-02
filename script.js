@@ -3,7 +3,7 @@ var prevScrollpos = window.pageXOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageXOffset;
     if (prevScrollpos > currentScrollPos) {
-        document.getElementById("caption-section").style.top = "3.5rem";
+        document.getElementById("caption-section").style.top = "3rem";
     } else {
         document.getElementById("caption-section").style.top = "-2.5rem";
     }
