@@ -1,3 +1,8 @@
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -250,7 +255,7 @@ p {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   p {
     color: black;
   }
@@ -279,7 +284,7 @@ p {
   .navbar button {
     color: black;
   }
-}
+} */
 
 
 
