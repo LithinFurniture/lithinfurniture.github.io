@@ -250,6 +250,37 @@ p {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  p {
+    color: black;
+  }
+  .title .high-letter {
+    color: rgb(90, 48, 0);
+    text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.295);
+  }
+  .title .low-letter {
+    color: black;
+    text-shadow: 2px 0px 5px rgba(112, 61, 27, 0.712);
+  }
+  .navbar-title {
+    font-family:  'Milonga', cursive;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: black;
+    text-shadow: 0.5px 0px 1px rgba(121, 73, 41, 0.671);
+  }
+  .navbar-title .high-letter {
+    font-size: 4.6vw;
+    color: rgb(78, 42, 0);
+  }
+  .section-headings {
+    color: rgb(26, 14, 0);
+  }
+  .navbar button {
+    color: black;
+  }
+}
+
 
 
 /*Animate fade effect to caption-section at the begining*/
