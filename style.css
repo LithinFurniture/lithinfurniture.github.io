@@ -19,7 +19,7 @@ p {
 }
 
 .intex-body {
-  background-image: linear-gradient(to bottom right, white, rgb(179, 179, 179));
+  /* background-image: linear-gradient(to bottom right, white, rgb(179, 179, 179)); */
 }
 
 
@@ -140,7 +140,7 @@ p {
   position: relative;
 }
 .about-section .row {
-  width: 85%;
+  width: 90%;
   }
 .about-section p {
   font-family: 'El Messiri', sans-serif;
@@ -208,10 +208,10 @@ p {
   }
   .address-inner-div {
     width: 80%;
-    padding: 3rem;
   }
   .address-text {
-    font-size: 2.8vw;
+    font-size: 1rem;
+    padding: 2rem;
   }
   .main-image-div {
     height: 12rem;
