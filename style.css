@@ -39,6 +39,7 @@ p {
   width: 100%;
   top: 0;
   position: absolute;
+  background-color: rgba(0, 0, 0, 0);
 }
 .navbar {
   padding: 0.01rem;
@@ -52,6 +53,7 @@ p {
   position: relative;
   top: -16rem;
   margin-left: 2rem;
+  background-color: rgba(0, 0, 0, 0);
 }
 .title {
   font-size: 3.4vw;
@@ -68,25 +70,35 @@ p {
 }
 .navbar-title {
   font-family:  'Milonga', cursive;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   padding-top: 0.5rem;
   color: black;
   text-shadow: 0.5px 0px 1px rgba(121, 73, 41, 0.671);
 }
 .navbar-title .high-letter {
   font-size: 4.6vw;
-  color: rgb(0, 0, 0);
+  color: rgb(90, 48, 0);
 }
 .navbar-title .low-letter {
   font-size: 3.7vw;
-  color: rgb(37, 21, 1);
+  color: black;
 }
 .section-links {
   color: rgb(17, 9, 0);
   font-family: 'Exo', sans-serif;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  margin-top: 0.5rem;
+  background-color:  rgba(26, 14, 0, 0.116);
+  border-radius: 01rem;
 }
 .section-links:hover {
-  color: rgb(102, 69, 29);
+  /* color: rgb(102, 69, 29); */
+  color: rgb(90, 59, 21);
+  background-color: #6764696e;
+}
+.nav-link {
+  padding: 0.1rem;
 }
 
 
@@ -239,7 +251,14 @@ p {
     height: 180px;
   }
   .section-links {
+    margin-top: 0rem;
     padding: 0.2rem;
+    width: fit-content;
+    background-color: unset;
+  }
+  .section-links:hover {
+    color: rgb(90, 59, 21);
+    background-color: unset;
   }
 }
 @media only screen and (min-width:767px) {
