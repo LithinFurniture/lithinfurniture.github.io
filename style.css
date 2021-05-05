@@ -93,7 +93,7 @@ p {
   margin-right: 0.3rem;
   margin-top: 0.5rem;
   background-color:  rgba(26, 14, 0, 0.116);
-  border-radius: 01rem;
+  border-radius: 1rem;
 }
 .section-links:hover {
   /* color: rgb(102, 69, 29); */
@@ -212,10 +212,18 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
-.copyrights {
+/* .copyrights {
   color: #a1a1a1;
   font-size: small;
+} */
+footer h6 {
+  color: #a1a1a1;
+  margin: 0;
+  margin-bottom: 0.2rem;
+  letter-spacing: .1rem;
 }
+
+
 
 
 
@@ -261,6 +269,7 @@ p {
     padding: 0.2rem;
     width: fit-content;
     background-color: unset;
+    margin-left: .8rem;
   }
   .section-links:hover {
     color: rgb(90, 59, 21);
