@@ -1,0 +1,27 @@
+/*Animate fade effect to caption-section at the begining*/
+@keyframes fade-in {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+/*Animate moving effect to caption-div (to right & left) at the beginig*/
+@keyframes move-to-right {
+   from {
+      right: 20rem;
+   }
+   to {
+      right: 0rem;
+   }
+}
+@keyframes move-to-left {
+   0% {
+      left: 20rem;
+   }
+   100% {
+      left: 0rem;
+   }
+}

@@ -1,0 +1,55 @@
+@media only screen and (max-width: 767px) {
+   .navbar-title {
+      margin-right: auto;
+   }
+   .title-div {
+      display: none;
+   }
+   .address-inner-div {
+      width: 70%;
+      padding: 1.5rem;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+   }
+   .address-text {
+      font-size: 0.8rem;
+   }
+   .main-image-div {
+      height: 12rem;
+      width: 100%;
+   }
+   .caption-section {
+      width: 90%;
+      padding-top: 0.8rem;
+   }
+   .caption-section .container.large {
+      padding-top: 1.3rem;
+      padding-bottom: 1.3rem;
+   }
+   .about-section .row {
+      width: 100%;
+   }
+   .map {
+      height: 180px;
+   }
+   .section-links {
+      margin-top: 0rem;
+      padding: 0.2rem;
+      width: fit-content;
+      background-color: unset;
+      margin-left: 0.8rem;
+   }
+   .section-links:hover {
+      color: rgb(90, 59, 21);
+      background-color: unset;
+   }
+}
+
+@media only screen and (min-width: 767px) {
+   .navbar-title {
+      display: none;
+   }
+   .caption-section .row {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+   }
+}
