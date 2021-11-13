@@ -1,3 +1,7 @@
+* {
+   margin: 0;
+   padding: 0;
+}
 html {
    scroll-behavior: smooth;
 }
@@ -6,79 +10,79 @@ p {
    color: black;
 }
 
-.shadow {
+._shadow {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
 }
-.shadow-lite {
+._shadow-lite {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
-.section-headings {
+._section-headings {
    text-align: center;
    font-family: "Righteous", cursive;
    color: rgb(26, 14, 0);
 }
 
-/* *Section: header* */
-.main-image-div {
+/* *Section: Header* */
+.header__banner {
    height: 18rem;
    width: 100%;
 }
-.main-img {
+.header--img {
    width: inherit;
    height: inherit;
 }
-.navbar-div {
-   z-index: 10;
-   width: 100%;
-   top: 0;
-   position: absolute;
-   background-color: rgba(0, 0, 0, 0);
-}
-.navbar {
-   padding: 0.01rem;
-}
-.navbar button {
-   outline: none;
-   font-size: medium;
-}
-.title-div {
+.header--title-div {
    width: 45vw;
    position: relative;
    top: -16rem;
    margin-left: 2rem;
    background-color: rgba(0, 0, 0, 0);
 }
-.title {
+.header--title {
    font-size: 3.4vw;
    font-family: "Milonga", cursive;
 }
-.title .high-letter {
+.header--title .high-letter {
    font-size: 4.2vw;
    color: rgb(90, 48, 0);
    text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.295);
 }
-.title .low-letter {
-   /* color: black; */
+.header--title .low-letter {
    color: rgb(36, 19, 0);
    text-shadow: 2px 0px 5px rgba(112, 61, 27, 0.712);
 }
-.navbar-title {
+.header__navbar {
+   z-index: 10;
+   width: 100%;
+   top: 0;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0);
+   /* padding: 0.01rem; */
+   padding: 0 !important;
+}
+.header--toggle-btn {
+   outline: none !important;
+   font-size: medium;
+   color: rgb(59, 33, 0);
+}
+.header--nav-title {
    font-family: "Milonga", cursive;
    /* padding-left: 1rem; */
-   padding-top: 0.5rem;
+   /* padding-top: 0.5rem; */
    color: black;
    text-shadow: 0.5px 0px 1px rgba(121, 73, 41, 0.671);
 }
-.navbar-title .high-letter {
-   font-size: 4.6vw;
+.header--nav-title .high-letter {
+   /* font-size: 4.6vw; */
+   font-size: 6vw;
    color: rgb(90, 48, 0);
 }
-.navbar-title .low-letter {
-   font-size: 3.7vw;
-   /* color: black; */
+.header--nav-title .low-letter {
+   /* font-size: 3.7vw; */
+   font-size: 5vw;
    color: rgb(36, 19, 0);
 }
-.section-links {
+.header--nav-links .nav-link {
    /* color: rgb(17, 9, 0); */
    color: rgb(26, 14, 0);
    font-family: "Exo", sans-serif;
@@ -86,119 +90,137 @@ p {
    margin-right: 0.3rem;
    margin-top: 0.5rem;
    background-color: rgba(26, 14, 0, 0.116);
-   border-radius: 1rem;
-}
-.section-links:hover {
-   /* color: rgb(102, 69, 29); */
-   color: rgb(90, 59, 21);
-   background-color: #6764696e;
-}
-.nav-link {
+   /* border-radius: 1rem; */
+   border-radius: 0.4rem;
+   /* border: 1px solid rgb(26, 14, 0); */
    padding: 0.1rem;
 }
+.header--nav-links .nav-link:hover {
+   /* color: rgb(102, 69, 29); */
+   color: rgb(44, 27, 5);
+   background-color: #6764696e;
+}
+/* *Section: /Header* */
 
-/* *Section: caption* */
-.caption-section {
+/* *Section: Caption* */
+.caption {
    width: 80%;
    top: -2.5rem;
    position: relative;
    transition: 600ms;
    animation: fade-in 550ms linear forwards;
 }
-.caption-section .container {
+.caption__container {
    position: relative;
 }
-.caption-section p {
-   color: rgb(26, 14, 0);
-}
-.caption-section .container.small {
+.caption__container.small {
    padding-left: 2rem;
    padding-right: 2rem;
    animation: move-to-right 600ms linear forwards;
 }
-.caption-section .container.large {
-   animation: move-to-left 600ms linear forwards;
+.caption__container.large {
    padding-top: 3rem;
    padding-bottom: 3rem;
+   animation: move-to-left 600ms linear forwards;
 }
-.caption-section .row {
+.caption__container .row {
    background: #aa9d95;
 }
-.caption-text {
-   font-family: "Marck Script", cursive;
-   font-size: 3.5vw;
-}
-.caption-img {
+.caption--img {
    max-width: 100%;
    min-height: 100%;
 }
-.caption-img.right {
+.caption--img.right {
    border-left-style: ridge;
    border-color: #5e473a;
 }
-.caption-img.left {
+.caption--img.left {
    border-right-style: groove;
    border-color: #5e473a;
 }
+.caption--quote {
+   color: rgb(26, 14, 0);
+   font-family: "Marck Script", cursive;
+   font-size: 3.5vw;
+}
+/* *Section: /Caption* */
 
-/* *Section: about* */
-.about-section {
+/* *Section: About* */
+.about {
    position: relative;
 }
-.about-section .row {
+.about__container .row {
    width: 90%;
 }
-.about-section p {
+.about--desc {
    font-family: "El Messiri", sans-serif;
    font-size: larger;
    text-align: justify;
 }
+/* *Section: /About* */
 
-/* *Section: location* */
-.map-div {
+/* *Section: Location* */
+.location--map-div {
    padding: 3rem;
 }
-.map {
+.location--map {
    max-width: 100%;
 }
-.address-div {
+.location--address-div {
    padding: 0;
 }
-.address-inner-div {
+.location--address {
    border-top-left-radius: 30px;
    border-bottom-left-radius: 30px;
    width: 93%;
    padding: 5rem;
    background: #85685634;
 }
-.address-text {
+.location--address-text {
    font-family: "Exo", sans-serif;
    font-size: 1.2rem;
    letter-spacing: 0.03rem;
 }
+/* *Section: /Location* */
 
-/* *Section: footer* */
-.footer-section {
+/* *Section: Footer* */
+.footer {
    background-color: black;
+   height: 4.5rem;
 }
-.media-logo {
-   font-size: larger;
-}
-.media-logo a {
-   color: #ffffff;
-   text-decoration: none;
-}
-.media-logo a:hover {
-   color: #a1a1a1;
-   text-decoration: none;
-}
-/* .copyrights {
-  color: #a1a1a1;
-  font-size: small;
-} */
-footer h6 {
+.footer--heading {
+   font-family: "Cairo", sans-serif;
+   font-size: 1rem;
    color: #a1a1a1;
    margin: 0;
    margin-bottom: 0.2rem;
    letter-spacing: 0.1rem;
 }
+.footer--media-logo {
+   font-size: larger;
+}
+.footer--media-logo a {
+   color: #fff;
+   text-decoration: none;
+}
+.footer--media-logo a:hover {
+   color: #a1a1a1;
+   text-decoration: none;
+}
+.footer--developer {
+   font-family: "Cairo", sans-serif;
+   color: rgba(255, 255, 255, 0.08);
+   position: absolute;
+   right: 0.6rem;
+   margin-top: 2.8rem;
+   font-size: 0.7rem;
+   cursor: default;
+}
+.footer--developer:hover {
+   color: rgba(255, 255, 255, 0.15);
+}
+.footer--developer a {
+   color: inherit;
+   font-weight: 700;
+}
+/* *Section: /Footer* */
