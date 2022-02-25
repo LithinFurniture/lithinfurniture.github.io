@@ -32,14 +32,13 @@ p {
    height: inherit;
 }
 .header--title-div {
-   width: 45vw;
    position: relative;
-   top: -16rem;
+   top: -15rem;
    margin-left: 2rem;
    background-color: rgba(0, 0, 0, 0);
+   cursor: default;
 }
 .header--title {
-   font-size: 3.4vw;
    font-family: "Milonga", cursive;
 }
 .header--title .high-letter {
@@ -48,6 +47,7 @@ p {
    text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.295);
 }
 .header--title .low-letter {
+   font-size: 3.4vw;
    color: rgb(36, 19, 0);
    text-shadow: 2px 0px 5px rgba(112, 61, 27, 0.712);
 }
@@ -57,7 +57,6 @@ p {
    top: 0;
    position: absolute;
    background-color: rgba(0, 0, 0, 0);
-   /* padding: 0.01rem; */
    padding: 0 !important;
 }
 .header--toggle-btn {
@@ -67,36 +66,28 @@ p {
 }
 .header--nav-title {
    font-family: "Milonga", cursive;
-   /* padding-left: 1rem; */
-   /* padding-top: 0.5rem; */
    color: black;
    text-shadow: 0.5px 0px 1px rgba(121, 73, 41, 0.671);
 }
 .header--nav-title .high-letter {
-   /* font-size: 4.6vw; */
    font-size: 6vw;
    color: rgb(90, 48, 0);
 }
 .header--nav-title .low-letter {
-   /* font-size: 3.7vw; */
    font-size: 5vw;
    color: rgb(36, 19, 0);
 }
 .header--nav-links .nav-link {
-   /* color: rgb(17, 9, 0); */
    color: rgb(26, 14, 0);
    font-family: "Exo", sans-serif;
    margin-left: 0.3rem;
    margin-right: 0.3rem;
    margin-top: 0.5rem;
    background-color: rgba(26, 14, 0, 0.116);
-   /* border-radius: 1rem; */
    border-radius: 0.4rem;
-   /* border: 1px solid rgb(26, 14, 0); */
    padding: 0.1rem;
 }
 .header--nav-links .nav-link:hover {
-   /* color: rgb(102, 69, 29); */
    color: rgb(44, 27, 5);
    background-color: #6764696e;
 }
@@ -185,42 +176,31 @@ p {
 
 /* *Section: Footer* */
 .footer {
-   background-color: black;
-   height: 4.5rem;
+   padding: 0 5%;
+}
+.footer__container {
+   border-top: 2px solid rgb(32, 17, 0);
 }
 .footer--heading {
    font-family: "Cairo", sans-serif;
    font-size: 1rem;
-   color: #a1a1a1;
-   margin: 0;
-   margin-bottom: 0.2rem;
+   color: rgb(22, 12, 0);
    letter-spacing: 0.1rem;
 }
 .footer--media-logo {
    font-size: larger;
 }
 .footer--media-logo a {
-   color: #fff;
    text-decoration: none;
+   fill: rgb(32, 17, 0);
+   margin: 0 0.1rem;
+}
+.footer--media-logo a svg {
+   width: 1.6rem;
+   margin-top: -0.25rem;
 }
 .footer--media-logo a:hover {
-   color: #a1a1a1;
+   fill: #5e473a;
    text-decoration: none;
-}
-.footer--developer {
-   font-family: "Cairo", sans-serif;
-   color: rgba(255, 255, 255, 0.08);
-   position: absolute;
-   right: 0.6rem;
-   margin-top: 2.8rem;
-   font-size: 0.7rem;
-   cursor: default;
-}
-.footer--developer:hover {
-   color: rgba(255, 255, 255, 0.15);
-}
-.footer--developer a {
-   color: inherit;
-   font-weight: 700;
 }
 /* *Section: /Footer* */

@@ -4,8 +4,9 @@
       height: 12rem;
       width: 100%;
    }
-   .header--nav-title {
-      margin-right: auto;
+   .header--title-div {
+      top: -11rem;
+      margin-left: 1rem;
    }
    .header--nav-links .nav-link {
       margin-top: 0rem;
@@ -44,9 +45,17 @@
 }
 
 @media only screen and (max-width: 550px) {
-   .header--nav-title {
-      position: relative;
-      top: -0.28rem;
+   .header--title-div {
+      top: -11.5rem;
+   }
+   .header--title .high-letter {
+      font-size: 5.5vw;
+   }
+   .header--title .low-letter {
+      font-size: 4.5vw;
+   }
+   .footer--media-logo a svg {
+      width: 1.4rem;
    }
 }
 
@@ -55,34 +64,29 @@
       padding: 0;
    }
 }
+
+@media only screen and (max-width: 360px) {
+   .header--title-div {
+      top: -12rem;
+      margin-left: 0.5rem;
+   }
+   .header--title .high-letter {
+      font-size: 6vw;
+   }
+   .header--title .low-letter {
+      font-size: 5vw;
+   }
+}
 /** /Max-Width **/
 
 /** Min-Width **/
-@media only screen and (min-width: 400px) {
-   .header--nav-title .high-letter {
-      font-size: 5vw;
-   }
-   .header--nav-title .low-letter {
-      font-size: 4vw;
-   }
-}
-
 @media only screen and (min-width: 550px) {
    .header--toggle-btn {
       font-size: 1.2rem;
    }
-   .header--nav-title .high-letter {
-      font-size: 4.5vw;
-   }
-   .header--nav-title .low-letter {
-      font-size: 3.5vw;
-   }
 }
 
 @media only screen and (min-width: 767px) {
-   .header--nav-title {
-      display: none;
-   }
    .caption .caption__container .row {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
    }
