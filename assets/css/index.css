@@ -86,6 +86,7 @@ p {
    background-color: rgba(26, 14, 0, 0.116);
    border-radius: 0.4rem;
    padding: 0.1rem;
+   transition-duration: 300ms;
 }
 .header--nav-links .nav-link:hover {
    color: rgb(44, 27, 5);
@@ -204,3 +205,28 @@ p {
    text-decoration: none;
 }
 /* *Section: /Footer* */
+
+/* *Page Scroll Btn* */
+#scroll-top-btn {
+   display: none;
+   position: fixed;
+   bottom: 3rem;
+   right: 4%;
+   background-color: rgba(63, 34, 0, 0.65);
+   width: 2.5rem;
+   aspect-ratio: 1;
+   border-radius: 50%;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   z-index: 999;
+   transition-duration: 500ms;
+}
+#scroll-top-btn:hover {
+   background-color: rgba(63, 34, 0, 0.85);
+}
+.scroll-top-btn--arrow {
+   fill: rgb(32, 17, 0);
+   width: 2rem;
+}
+/* * /Page Scroll Btn* */

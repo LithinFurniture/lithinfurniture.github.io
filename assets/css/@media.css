@@ -63,6 +63,10 @@
    .header--nav-links .nav-link {
       padding: 0;
    }
+   #scroll-top-btn {
+      bottom: 2rem;
+      right: 6%;
+   }
 }
 
 @media only screen and (max-width: 360px) {
