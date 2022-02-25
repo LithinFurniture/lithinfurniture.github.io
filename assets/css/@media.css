@@ -63,6 +63,9 @@
    .header--nav-links .nav-link {
       padding: 0;
    }
+   .footer__container {
+      border-top: 1px solid rgb(32, 17, 0);
+   }
    #scroll-top-btn {
       bottom: 2rem;
       right: 6%;
@@ -72,7 +75,6 @@
 @media only screen and (max-width: 360px) {
    .header--title-div {
       top: -12rem;
-      margin-left: 0.5rem;
    }
    .header--title .high-letter {
       font-size: 6vw;

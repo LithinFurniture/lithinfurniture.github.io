@@ -105,6 +105,15 @@ p {
 .caption__container {
    position: relative;
 }
+#caption__container--one {
+   display: none;
+}
+#caption__container--two {
+   display: none;
+}
+#caption__container--three {
+   display: none;
+}
 .caption__container.small {
    padding-left: 2rem;
    padding-right: 2rem;
