@@ -35,7 +35,6 @@ p {
    position: relative;
    top: -15rem;
    margin-left: 2rem;
-   background-color: rgba(0, 0, 0, 0);
    cursor: default;
 }
 .header--title {
@@ -43,13 +42,16 @@ p {
 }
 .header--title .high-letter {
    font-size: 4.2vw;
-   color: rgb(90, 48, 0);
-   text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.295);
+   color: rgb(56, 30, 0);
+   text-shadow: 2px 0px 5px rgba(90, 48, 0, 0.5);
+}
+.header--title .high-letter.letter-l {
+   margin-right: -0.2rem;
 }
 .header--title .low-letter {
    font-size: 3.4vw;
-   color: rgb(36, 19, 0);
-   text-shadow: 2px 0px 5px rgba(112, 61, 27, 0.712);
+   color: rgb(90, 48, 0);
+   text-shadow: 2px 0px 5px rgba(56, 30, 0, 0.5);
 }
 .header__navbar {
    z-index: 10;
@@ -59,7 +61,7 @@ p {
    background-color: rgba(0, 0, 0, 0);
    padding: 0 !important;
 }
-.header--toggle-btn {
+/* .header--toggle-btn {
    outline: none !important;
    font-size: medium;
    color: rgb(59, 33, 0);
@@ -76,7 +78,7 @@ p {
 .header--nav-title .low-letter {
    font-size: 5vw;
    color: rgb(36, 19, 0);
-}
+} */
 .header--nav-links .nav-link {
    color: rgb(26, 14, 0);
    font-family: "Exo", sans-serif;
